@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="364686e4-280d-49a8-856e-a56481d2b463" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/uiucanteey/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/backend/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/backend/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/backend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/backend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/src/react-app-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/src/reportWebVitals.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uiucanteey/tsconfig.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2TQwobX2mhP8Q5T6xmfRFCHDm3B" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "E:/Software Project/UIU_Canteey/UIU_Canteey_Mobile"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="364686e4-280d-49a8-856e-a56481d2b463" name="Changes" comment="" />
+      <created>1690988789912</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690988789912</updated>
+    </task>
+    <servers />
+  </component>
+</project>

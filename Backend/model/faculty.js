@@ -2,11 +2,7 @@ const mg = require("mongoose");
 const bcrypt = require("bcryptjs");
 const jsonwebtoken = require("jsonwebtoken");
 
-const owner = new mg.Schema({
-  usercode: {
-    type: String,
-    required: true,
-  },
+const faculty = new mg.Schema({
   name: {
     type: String,
     required: true,
@@ -15,12 +11,12 @@ const owner = new mg.Schema({
     type: String,
     required: true,
   },
-  phone_no: {
+  room_no: {
     type: Number,
     required: true,
   },
-  canteen_name: {
-    type: String,
+  phone_no: {
+    type: Number,
     required: true,
   },
   password: {
@@ -38,14 +34,14 @@ const owner = new mg.Schema({
 
 //this acts as the middleware
 
-owner.pre("save", async function (next) {
+faculty.pre("save", async function (next) {
   if (this.isModified("password")) {
     this.password = await bcrypt.hash(this.password, 12);
     next();
   }
 });
 
-owner.methods.generateOwnerToken = async function () {
+faculty.methods.generateFacultyToken = async function () {
   try {
     let token = jsonwebtoken.sign({ _id: this._id }, process.env.SECRET_KEY);
     this.tokens = this.tokens.concat({ token: token });
@@ -56,6 +52,6 @@ owner.methods.generateOwnerToken = async function () {
   }
 };
 
-const Owner = mg.model("Owner", owner);
+const Faculty = mg.model("Faculty", faculty);
 
-module.exports = Owner;
+module.exports = Faculty;

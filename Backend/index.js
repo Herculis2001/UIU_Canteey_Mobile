@@ -3,8 +3,14 @@ const app = express();
 const dotenv = require("dotenv");
 dotenv.config({ path: "./config.env" });
 const bodyParser = require("body-parser");
+// const { bkashController } = require('./api/bkashController'); 
+const cors = require('cors');
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
+
+// // Use the bkashController routes
+// app.use('/api/bkash', bkashController); 
 
 require("./db");
 app.use(express.json());
@@ -16,7 +22,10 @@ app.get("/", (req, res) => {
 app.get("/student_login", (req, res) => {
   res.send(`Hello this is from server attaching the token khi khi`);
 });
+app.get("/faculty_login", (req, res) => {
+  res.send(`Hello this is from server attaching the token khi khi`);
+});
 
-app.listen(5000, () => {
-  console.log("Server is listening on port 5000");
+app.listen(8000, () => {
+  console.log("Server is listening on port 8000");
 });

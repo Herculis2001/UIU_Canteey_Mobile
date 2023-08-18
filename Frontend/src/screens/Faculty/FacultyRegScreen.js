@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import {
   View,
   Text,
@@ -29,21 +30,16 @@ export default function SignupCard() {
   const handleSubmit = async () => {
     const { name, email, room_no, phone_no, password, cpassword } = faculty;
     try {
-      const res = await fetch('./faculty_register', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name,
-          email,
-          room_no,
-          phone_no,
-          password,
-          cpassword,
-        }),
+      const response = await axios.post('./faculty_register', {
+        name,
+        email,
+        room_no,
+        phone_no,
+        password,
+        cpassword,
       });
-      const dataa = await res.json();
+
+      const dataa = response.data;
       console.log(dataa);
       if (dataa === '422') {
         return alert('Fill the form');
@@ -100,7 +96,7 @@ export default function SignupCard() {
               onPress={() => setShowPassword(!showPassword)}
               style={styles.passwordToggle}
             >
-              {showPassword ? <ViewIcon /> : <ViewOffIcon />}
+              {showPassword ? <ViewOffIcon /> : <ViewIcon />}
             </TouchableOpacity>
           </View>
           <View style={styles.passwordInput}>
@@ -114,7 +110,7 @@ export default function SignupCard() {
               onPress={() => setShowPassword(!showPassword)}
               style={styles.passwordToggle}
             >
-              {showPassword ? <ViewIcon /> : <ViewOffIcon />}
+              {showPassword ? <ViewOffIcon /> : <ViewIcon />}
             </TouchableOpacity>
           </View>
           <TouchableOpacity style={styles.button} onPress={handleSubmit}>

@@ -2,12 +2,12 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import StudentLoginScreen from "./Components/StudentLoginScreen";
-import HomeScreen from "./Components/HomeScreen";
-import StudentRegScreen from "./Components/StudentRegScreen";
-import FacultyRegScreen from "./Components/FacultyRegScreen";
-import FacultyLoginScreen from "./Components/FacultyLoginScreen";
-import OwnerLogin from "./Components/OwnerLogin";
+import StudentLoginScreen from "../screens/Student/StudentLoginScreen";
+import HomeScreen from "../screens/Home/HomeScreen";
+import StudentRegScreen from "../screens/Student/StudentRegScreen";
+import FacultyRegScreen from "../screens/Faculty/FacultyRegScreen";
+import FacultyLoginScreen from "../screens/Faculty/FacultyLoginScreen";
+import OwnerLogin from "../screens/Owner/OwnerLogin";
 
 const Stack = createStackNavigator();
 
@@ -24,6 +24,10 @@ function MainNavigator() {
       }}
     >
       <Stack.Screen name='Home' component={HomeScreen} />
+      <Stack.Screen name='StudentLoginScreen' component={StudentLoginScreen} />
+      <Stack.Screen name='StudentRegScreen' component={StudentRegScreen} />
+      <Screen name='FacultyLoginScreen' component={FacultyLoginScreen} />
+      <Screen name='FacultyRegScreen' component={FacultyRegScreen} />
     </Stack.Navigator>
   )
 } 

@@ -47,8 +47,16 @@ const HomeScreen = ({ navigation }) => {
       <View style={styles.container}>
       <Text style={styles.heading}>Want to Login</Text>
       <Button
-        title="Click Here"
-        onPress={() => navigation.navigate('LoginScreen')}
+        title="Student Login"
+        onPress={() => navigation.navigate('StudentLoginScreen')}
+      />
+      <Button
+        title="Faculty Login"
+        onPress={() => navigation.navigate('FacultyLoginScreen')}
+      />
+      <Button
+        title="Owner Login"
+        onPress={() => navigation.navigate('OwnerLoginScreen')}
       />
     </View>
     

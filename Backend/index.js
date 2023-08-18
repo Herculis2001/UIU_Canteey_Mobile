@@ -26,6 +26,6 @@ app.get("/faculty_login", (req, res) => {
   res.send(`Hello this is from server attaching the token khi khi`);
 });
 
-app.listen(8000, () => {
-  console.log("Server is listening on port 8000");
+app.listen(5000, () => {
+  console.log("Server is listening on port 5000");
 });

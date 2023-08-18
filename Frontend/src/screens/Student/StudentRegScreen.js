@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import {
   View,
   Text,
@@ -28,34 +29,29 @@ export default function SignupCard() {
   const handleSubmit = async () => {
     const { email, studentid, password, cpassword } = student;
     try {
-      const res = await fetch('./student_register', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email,
-          studentid,
-          password,
-          cpassword,
-        }),
+      const response = await axios.post('/student_register', {
+        email,
+        studentid,
+        password,
+        cpassword,
       });
-      const dataa = await res.json();
+
+      const dataa = response.data;
       console.log(dataa);
       if (dataa === '422') {
         return alert('Fill the form');
       }
       if (dataa === '423') {
-        return alert('user already exist');
+        return alert('User already exists');
       }
       if (dataa === '425') {
-        return alert('password is not matching');
+        return alert('Passwords do not match');
       }
       if (dataa === '200') {
         return alert('Successfully Registered');
       }
     } catch (err) {
-      console.log('there is an error', err);
+      console.log('There is an error', err);
     }
   };
 

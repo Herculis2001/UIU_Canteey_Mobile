@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import {
   View,
   Text,
@@ -17,15 +18,12 @@ export default function SimpleCard(props) {
 
   const loginhandler = async () => {
     try {
-      const res = await fetch('./student_login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, password }),
+      const response = await axios.post('/student_login', {
+        email,
+        password,
       });
 
-      const dataa = await res.json();
+      const dataa = response.data;
       if (dataa === '405') {
         return alert('Invalid Credentials');
       }
